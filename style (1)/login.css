@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav{ display: flex; gap: 30px; }
+nav a{ color: white; text-decoration: none; font-size: 15px; }
+
+.menu-direita{ display: flex; gap: 20px; }
+.menu-direita a{ color: white; text-decoration: none; font-size: 14px; }
+
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 50px;
+}
+
+.login-box{
+    width: 100%;
+    max-width: 400px;
+    background-color: #1a1a1a;
+    border: 2px solid #444;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.login-box h1{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-box label{
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"]{
+    background-color: #000;
+    border: 1px solid #666;
+    color: white;
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-box input[type="email"]:focus,
+.login-box input[type="password"]:focus{
+    border-color: #fff;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.lembrar{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+.opcoes a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.opcoes a:hover{ color: white; text-decoration: underline; }
+
+.login-box button{
+    margin-top: 25px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover{
+    background-color: #ccc;
+}
+
+.cadastro{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.cadastro a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro a:hover{ text-decoration: underline; }
